@@ -46,7 +46,13 @@ namespace VolunteeringApp.Repositories
 
         private static void InitUsers()
         {
-
+            Users.Add(new UserModel
+            {
+                Id = 1,
+                Email = "admin",
+                Password = "hackathon",
+                IsAdmin = true
+            });
         }
 
         private static void InitClassifieds()

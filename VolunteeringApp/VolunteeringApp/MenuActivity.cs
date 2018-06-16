@@ -5,6 +5,9 @@ using Android.Content.PM;
 using Android.OS;
 using Android.Views;
 using Android.Widget;
+using System.Linq;
+using VolunteeringApp.Common;
+using VolunteeringApp.Repositories;
 
 namespace VolunteeringApp
 {
@@ -28,9 +31,21 @@ namespace VolunteeringApp
 
             btnClassifieds.SetOnClickListener(new BtnClassifiedsClickListener());
             btnAccepted.SetOnClickListener(new BtnAcceptedClickListener());
-            btnStatistics.SetOnClickListener(new BtnStatisticsClickListener());
             btnMessage.SetOnClickListener(new BtnMessageClickListener());
             btnSettings.SetOnClickListener(new BtnSettingsClickListener());
+
+            var user = Repository.Users.Where(u => u.Id == CurrentSession.UserId).FirstOrDefault();
+
+            if (user.IsAdmin)
+            {
+                btnStatistics.Text = "Dodaj wydarzenie";
+                btnStatistics.SetOnClickListener(new BtnAdminStatisticsClickListener());
+            }
+            else
+            {
+                btnStatistics.Text = "Moje Statystyki";
+                btnStatistics.SetOnClickListener(new BtnUserStatisticsClickListener());
+            }            
         }
 
         private class BtnClassifiedsClickListener : Java.Lang.Object, View.IOnClickListener
@@ -51,11 +66,20 @@ namespace VolunteeringApp
             }
         }
 
-        private class BtnStatisticsClickListener : Java.Lang.Object, View.IOnClickListener
+        private class BtnUserStatisticsClickListener : Java.Lang.Object, View.IOnClickListener
         {
             public void OnClick(View v)
             {
                 Intent intent = new Intent(_activity, typeof(StatisticsActivity));
+                _activity.StartActivity(intent);
+            }
+        }
+
+        private class BtnAdminStatisticsClickListener : Java.Lang.Object, View.IOnClickListener
+        {
+            public void OnClick(View v)
+            {
+                Intent intent = new Intent(_activity, typeof(CreateClassifiedsActivity));
                 _activity.StartActivity(intent);
             }
         }

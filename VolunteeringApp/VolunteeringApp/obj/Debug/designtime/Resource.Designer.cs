@@ -24,6 +24,10 @@ namespace VolunteeringApp
 			global::Android.Runtime.ResourceIdManager.UpdateIdValues();
 		}
 		
+		public static void UpdateIdValues()
+		{
+		}
+		
 		public partial class Animation
 		{
 			
@@ -2929,22 +2933,25 @@ namespace VolunteeringApp
 			public const int activity_classifieds_details = 2130903044;
 			
 			// aapt resource value: 0x7F030005
-			public const int activity_main = 2130903045;
+			public const int activity_create_classifieds = 2130903045;
 			
 			// aapt resource value: 0x7F030006
-			public const int activity_menu = 2130903046;
+			public const int activity_main = 2130903046;
 			
 			// aapt resource value: 0x7F030007
-			public const int activity_message = 2130903047;
+			public const int activity_menu = 2130903047;
 			
 			// aapt resource value: 0x7F030008
-			public const int activity_settings = 2130903048;
+			public const int activity_message = 2130903048;
 			
 			// aapt resource value: 0x7F030009
-			public const int activity_statistics = 2130903049;
+			public const int activity_settings = 2130903049;
 			
 			// aapt resource value: 0x7F030010
-			public const int classified_layout = 2130903056;
+			public const int activity_statistics = 2130903056;
+			
+			// aapt resource value: 0x7F030011
+			public const int classified_layout = 2130903057;
 			
 			// aapt resource value: 0x7F03001B
 			public const int design_bottom_navigation_item = 2130903067;

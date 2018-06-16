@@ -8,6 +8,7 @@
     <activity android:label="AcceptedActivity" android:screenOrientation="portrait" android:name="md59fb9efc9980531d93e109684fc758e23.AcceptedActivity" />
     <activity android:label="ClassifiedsActivity" android:screenOrientation="portrait" android:name="md59fb9efc9980531d93e109684fc758e23.ClassifiedsActivity" />
     <activity android:label="ClassifiedsDetailsActivity" android:screenOrientation="portrait" android:name="md59fb9efc9980531d93e109684fc758e23.ClassifiedsDetailsActivity" />
+    <activity android:label="CreateClassifiedsActivity" android:name="md59fb9efc9980531d93e109684fc758e23.CreateClassifiedsActivity" />
     <activity android:label="Logowanie" android:screenOrientation="portrait" android:name="md59fb9efc9980531d93e109684fc758e23.MainActivity">
       <intent-filter>
         <action android:name="android.intent.action.MAIN" />

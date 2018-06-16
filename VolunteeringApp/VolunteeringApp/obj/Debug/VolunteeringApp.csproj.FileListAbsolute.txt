@@ -82,5 +82,6 @@ D:\Profil\Documents\GitHub\team_kielce_53\VolunteeringApp\VolunteeringApp\obj\De
 D:\Profil\Documents\GitHub\team_kielce_53\VolunteeringApp\VolunteeringApp\obj\Debug\android\assets\System.Runtime.Serialization.pdb
 D:\Profil\Documents\GitHub\team_kielce_53\VolunteeringApp\VolunteeringApp\obj\Debug\android\assets\System.ServiceModel.Internals.pdb
 D:\Profil\Documents\GitHub\team_kielce_53\VolunteeringApp\VolunteeringApp\obj\Debug\android\assets\System.Xml.pdb
+D:\Profil\Documents\GitHub\team_kielce_53\VolunteeringApp\VolunteeringApp\obj\Debug\res\layout\activity_create_classifieds.xml
 D:\Profil\Documents\GitHub\team_kielce_53\VolunteeringApp\VolunteeringApp\bin\Debug\VolunteeringApp.dll
 D:\Profil\Documents\GitHub\team_kielce_53\VolunteeringApp\VolunteeringApp\obj\Debug\linksrc\VolunteeringApp.dll.mdb

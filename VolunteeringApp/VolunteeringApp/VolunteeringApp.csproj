@@ -61,6 +61,7 @@
     <Compile Include="ClassifiedsActivity.cs" />
     <Compile Include="ClassifiedsDetailsActivity.cs" />
     <Compile Include="Common\CurrentSession.cs" />
+    <Compile Include="CreateClassifiedsActivity.cs" />
     <Compile Include="MainActivity.cs" />
     <Compile Include="MenuActivity.cs" />
     <Compile Include="MessageActivity.cs" />
@@ -173,6 +174,11 @@
   <ItemGroup>
     <AndroidResource Include="Resources\drawable\round_red_background.xml">
       <Generator>MSBuild:UpdateGeneratedFiles</Generator>
+      <SubType>Designer</SubType>
+    </AndroidResource>
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\layout\activity_create_classifieds.axml">
       <SubType>Designer</SubType>
     </AndroidResource>
   </ItemGroup>

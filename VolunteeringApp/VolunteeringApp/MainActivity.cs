@@ -99,7 +99,8 @@ namespace VolunteeringApp
                 var user = new UserModel
                 {
                     Email = _usernameText.Text.Trim(),
-                    Password = _passwordText.Text.Trim()
+                    Password = _passwordText.Text.Trim(),
+                    IsAdmin = false
                 };
 
                 Task.Run(() =>
