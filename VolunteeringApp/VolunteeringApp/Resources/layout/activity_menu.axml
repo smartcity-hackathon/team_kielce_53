@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#212121">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40px">
+        <Button
+            android:text="Wydarzenia"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:height="200dp"
+            android:gravity="center"
+            android:layout_weight=".50"
+            android:layout_margin="10px"
+            android:background="@drawable/round_small_background"
+            android:textColor="@android:color/white"
+            android:textSize="18sp"
+            android:id="@+id/menu_btnClassifieds" />
+        <Button
+            android:text="Biorę udział"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:height="200dp"
+            android:gravity="center"
+            android:layout_weight=".50"
+            android:layout_margin="10px"
+            android:background="@drawable/round_small_background"
+            android:textColor="@android:color/white"
+            android:textSize="18sp"
+            android:id="@+id/menu_btnAccepted" />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:height="200dp"
+            android:text="Moje Statystyki"
+            android:gravity="center"
+            android:layout_margin="10px"
+            android:background="@drawable/round_small_background"
+            android:textColor="@android:color/white"
+            android:textSize="18sp"
+            android:id="@+id/menu_btnStatistics" />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <Button
+            android:text="Wiadomości"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:height="200dp"
+            android:gravity="center"
+            android:layout_weight=".50"
+            android:layout_margin="10px"
+            android:background="@drawable/round_small_background"
+            android:textColor="@android:color/white"
+            android:textSize="18sp"
+            android:id="@+id/menu_btnMessage" />
+        <Button
+            android:text="Ustawienia"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:height="200dp"
+            android:gravity="center"
+            android:layout_weight=".50"
+            android:layout_margin="10px"
+            android:background="@drawable/round_small_background"
+            android:textColor="@android:color/white"
+            android:textSize="18sp"
+            android:id="@+id/menu_btnSettings" />
+    </LinearLayout>
+</LinearLayout>
